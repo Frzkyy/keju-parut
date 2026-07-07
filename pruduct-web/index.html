@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping</title>
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    
+    <style>
+        #menubar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 50px 0px 0px;
+
+            background-color: #9f8d73;
+            position: sticky;
+            top: 0;
+
+            height: 35px;
+            font-size: 1.3rem;
+        }
+
+        .account-bar {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .account-bar a{
+            background-color: wheat;
+        }
+
+        #main-page {
+            display: grid;
+            grid-template-columns: 300px auto 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: 
+                "side-menu product product-detail"
+                "side-menu seller seller-detail"
+                "side-menu product-suggestion product-suggestion"
+                "footer footer footer";
+
+        }
+        #side-menu {
+            grid-area: side-menu;
+            background-color:  	#c3af89;
+        }
+
+        #product {
+            padding: 100px 200px;
+            text-align: center;
+            grid-area: product;
+            border-width: 3px;
+            border-color: black;
+            border-style: none solid solid none;
+            border-radius: 0px 0px 100px 0px;
+        }
+
+        #product-detail {
+            padding: 0px 50px 0px 10px;
+            grid-area: product-detail
+        }
+
+        #footer {
+            background-color: #9f8d73;
+            grid-area: footer;
+        }
+
+        .book-title {
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .book-detail {
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <nav id="menubar">
+        <div class="account-bar">
+            <img src="assets/icon.jpg" alt="Logo" width="50px" height="50px">
+            <a href="#">Home</a>
+        </div>
+
+        <div class="account-bar">
+            <a href="#">Notifications</a>
+            <a href="#">Cart</a>
+            <a href="#">Account</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="main-page">
+            <div id="side-menu">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores recusandae, mollitia excepturi dicta facere officiis cum nobis eaque laborum assumenda numquam nemo tenetur odio quaerat animi porro atque voluptatum?</p>
+            </div>
+
+            <div id="product">
+                <img src="assets/buku-cover.jpeg" alt="Buku">
+            </div>
+
+            <div id="product-detail">
+                <div class="book-title"> 
+                    <h1><b>Robohnya Surau Kami</b></h1>
+                    <h2>A.A Navis</h2>
+                </div>
+
+                <div class="book-detail">
+                    <p>Title: Robohnya Surau Kami</p>
+                    <p>Author: A.A Navis</p>
+                    <p>Publisher: Gramedia (1998)</p>
+                    <p>Year Released: 1956 </p>
+                    <p>Type: Book</p>
+                    <p>Synopsis:</p>
+                    <p>Cerpen Robohnya Surau Kami bercerita tentang kisah tragis matinya seorang kakek penjaga surau (masjid yang berukuran kecil) di kota kelahiran tokoh utama cerpen itu. Dia—si kakek —meninggal dengan menggorok lehernya sendiri setelah mendapat cerita dari Ajo Sidi—si pembual, tentang Haji Soleh yang masuk neraka walaupun pekerjaan sehari-harinya beribadah di masjid, persis yang dilakukan oleh si kakek. Haji Soleh dalam cerita Ajo Sidi adalah orang yang rajin beribadah, semua ibadah dari A sampai Z ia laksanakan semua, dengan tekun. Tetapi, saat "hari keputusan", hari ditentukannya manusia masuk surga atau neraka, Haji Soleh malah dimasukkan ke neraka. Haji Soleh memprotes Tuhan, mungkin dia alpa pikirnya. Tapi, mana mungkin Tuhan alpa, maka dijelaskanlah alasan dia masuk neraka, "Kamu tinggal di tanah Indonesia yang mahakaya raya, tapi engkau biarkan dirimu melarat, hingga anak cucumu teraniaya semua. Aku beri kau negeri yang kaya raya, tetapi kau malas. Kau lebih suka beribadat saja, karena beribadat tidak mengeluarkan peluh, tidak membanting tulang." Merasa tersindir dan tertekan oleh cerita Ajo Sidi, kakek memutuskan bunuh diri. Dan Ajo Sidi, yang mengetahui kematian kakek, hanya berpesan kepada istrinya untuk membelikan kain kafan tujuh lapis untuk kakek, lalu pergi kerja.</p>
+                </div>
+            </div>
+
+            <div id="footer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut, esse ipsam consequuntur enim, nemo velit laborum necessitatibus error qui itaque voluptatibus nulla illum, sequi pariatur? Minus quod deleniti error.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
