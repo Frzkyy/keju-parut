@@ -7,10 +7,67 @@
 </head>
 <body>
 <script>
+          /* 
+          Fundamental 
+          */
+
           const localhost = 2000 - 300
           const alphabet = 'A'
+          const template = `Template: ${alphabet}`
+          const numbah = "1"
+          const hah = Number(numbah)
           console.log(alphabet)
           console.log(localhost)
+          console.warn(template)
+          console.log(numbah + hah)
+          console.log(hah + hah)
+          console.log(hah + hah.toString())
+
+          /*
+          Container
+          */
+
+          let arrayContoh = []
+          let objectContoh = {}
+
+          arrayContoh.push("array", "arrayyaay")
+          objectContoh["contoh"] = "wleee"
+
+          console.table(arrayContoh)
+          console.table(objectContoh)
+
+          /*
+          input
+          */
+
+          const Masuk = confirm("Mau Masuk?")
+
+          if (Masuk){
+                    const name = prompt("Masukan Nama: ")
+                    alert(`Haloo ${name}`)
+          }
+          else {
+                    console.warn("Yhh")
+          }
+          
+          /*
+          Ternary Operator
+          */
+
+          const umur = 17
+
+          const legal = umur >= 18 ? "Legal" : "ilegal"
+
+          console.log(legal)
+
+          let nulish = null
+          let isNulish = nulish ?? "nulish" 
+          console.log(isNulish)
+          nulish = "ada"
+          isNulish = nulish ?? "nulish"
+          console.log(isNulish)
+
+
 </script>
 </body>
 </html>
