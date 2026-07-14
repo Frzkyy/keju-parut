@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>OOOOOOPPPPP</title>
+</head>
+<body>
+<script>
+
+          /*
+          ===========================
+                    OLD Class
+          ===========================
+
+          */
+          function Person(name="", age="") {
+                    this.name = name
+                    this.age = age
+                    this.sayHello = function () {
+                              if (this.name && this.age){
+                                        console.log(`Hello ${this.name} you're ${this.age} age now`)
+                              }
+                              else{
+                                        console.log("Please Enter Name or Age")
+                              }
+                    }
+          }
+
+          const olaf = new Person("Olaf", 19)
+          olaf.sayHello()
+          console.log(olaf)
+
+          //Inheritance
+          function PersonV2(name="", age="", job=""){
+                    this.job = job
+                    Person.call(this,name, age)
+
+          }
+          let edy = new PersonV2("Edy", 21, "Teacher")
+          edy.sayHello()
+
+          console.log(edy)
+
+          /*
+          ====================================
+                    NEW Class
+          ====================================
+          */
+
+          class Urang {
+                    constructor(name, age){
+                              this.name = name
+                              this.age = age
+                    }
+
+                    sayHello(){
+                              console.log(`Hello ${this.name} you're ${this.age} age now`)
+                    }
+          }
+
+          //Inheritance
+          class UrangV2 extends Urang {
+                    sayHello(){
+                              console.log(`Hello ${this.name} you're ${this.age} age now (This is V2 WOHOHOHOH)`)
+                    }
+          }
+
+          const olga = new Urang("Olga", 90)
+          olga.sayHello()
+          console.info(olga)
+
+          const rusdian = new UrangV2("Rusdian", 100)
+          rusdian.sayHello()
+
+
+</script>
+</body>
+</html>
