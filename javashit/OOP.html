@@ -61,8 +61,13 @@
 
           //Inheritance
           class UrangV2 extends Urang {
+
+                    constructor(name, age, job){
+                         super(name, age)
+                         this.job = job
+                    }
                     sayHello(){
-                              console.log(`Hello ${this.name} you're ${this.age} age now (This is V2 WOHOHOHOH)`)
+                              console.log(`Hello ${this.name} you're ${this.age} age now (${this.job})`)
                     }
           }
 
@@ -70,7 +75,7 @@
           olga.sayHello()
           console.info(olga)
 
-          const rusdian = new UrangV2("Rusdian", 100)
+          const rusdian = new UrangV2("Rusdian", 100, "Teacher")
           rusdian.sayHello()
 
 
