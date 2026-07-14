@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+<script>
+          /*
+          Function Generator
+          */
+          function* createNames(){
+                    yield "Halo"
+                    yield "Dunia"
+                    yield "Tikus"
+          }
+
+          const name = createNames()
+          for (let nama of name) [
+                    console.log(nama)
+          ]
+          //Cuman Bisa di iterasi, gk bisa diubah (bukan array) dan lazy
+
+          /*
+          Arrow Function
+          */
+          const sayHello = () => console.log("Hello WOrld")
+          sayHello()
+
+          const min = (satu,dua) => satu - dua
+          console.log(min(20,10))
+
+          const sayNama = nama => console.log(`Halo ${nama}`)
+          sayNama("Rusdi")
+
+          function sayaNamav2 (callback){
+                    callback("Ridho")
+          }
+          sayaNamav2((namee) => console.log(`Halo ${namee}`))
+
+          // This
+          console.info(this)
+
+          const person = {
+                    umur : 19,
+                    defaultName : "Tokek",
+                    sayHello : function (namo) {
+                              console.log(`Halo ${namo} yang berumur ${this.umur} th`)
+                    },
+                    //getter set gitu juga, malas buat
+                    get bidoata() {
+                              return `Nama: ${this.defaultName} | Umur: ${this.umur}`
+                    }
+          }
+          person.sayHello("Rusdi")
+          console.log(person.bidoata)
+
+          
+</script>
+</body>
+</html>

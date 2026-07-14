@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Javashit</title>
+</head>
+<body>
+<script>
+          /* 
+          Fundamental 
+          */
+
+          const localhost = 2000 - 300
+          const alphabet = 'A'
+          const template = `Template: ${alphabet}`
+          const numbah = "1"
+          const hah = Number(numbah)
+          console.log(alphabet)
+          console.log(localhost)
+          console.warn(template)
+          console.log(numbah + hah)
+          console.log(hah + hah)
+          console.log(hah + hah.toString())
+
+          /*
+          Container
+          */
+
+          let arrayContoh = []
+          let objectContoh = {}
+
+          arrayContoh.push("array", "arrayyaay")
+          objectContoh["contoh"] = "wleee"
+
+          console.table(arrayContoh)
+          console.table(objectContoh)
+
+          /*
+          input
+          */
+
+          const Masuk = confirm("Mau Masuk?")
+
+          if (Masuk){
+                    const name = prompt("Masukan Nama: ")
+                    alert(`Haloo ${name}`)
+          }
+          else {
+                    console.warn("Yhh")
+          }
+          
+          /*
+          Ternary Operator
+          */
+
+          const umur = 17
+
+          const legal = umur >= 18 ? "Legal" : "ilegal"
+
+          console.log(legal)
+
+          let nulish = null
+          let isNulish = nulish ?? "nulish" 
+          console.log(isNulish)
+          nulish = "ada"
+          isNulish = nulish ?? "nulish"
+          console.log(isNulish)
+
+          /*
+          REST Parameter & Value Function
+          */
+
+          function sum(name, ...data){
+                    let total = 0
+                    for(let i of data){
+                              total += i
+                    }
+                    console.log(`${name} : ${total}`)
+          }
+
+          let sumValueFunction = sum
+          sumValueFunction("Ekooo", ...[1,2,3,4,5,6])
+
+          /*
+          Anonymus Function
+          */
+
+          let anonim = function (name) {
+                    console.log(`Welcome ${name} to the darkweb`)
+          }
+
+          anonim("Kontraktor")
+
+          /*
+          Inner Outter Function
+          */
+
+          function outter(name){
+                    function inner(nama){
+                              console.log(nama)
+                    }
+
+                    inner(name)
+                    inner(name)
+                    inner(name)
+          }
+
+          outter("Kenedy")
+
+</script>
+</body>
+</html>
